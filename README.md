@@ -1,5 +1,5 @@
 # ChatrNet
-- Uses Python Flask Framework to build a simple social networking site
+- Uses Python Flask Framework
 - Utilizes SQLAlchemy and SQLite DB files to store data when a user posts
 - Homepage, with 4 most recent posts
 - By default, ChatrNet has 4 "places". When a user posts, they choose what place they want to post
