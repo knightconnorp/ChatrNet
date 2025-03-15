@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+{% block page_content %}
+    <nav class="container">
+        <p style="font-size: 16px">Places:</p>
+        {% for place in place_list %}
+        | <a class="place" href="/{{ place }}">{{ place_list[place] }}</a>
+        {% endfor %} |
+    </nav>
+    <hr class="lineMiddle">
+
+	<h1>{{ title }}</h1>
+    <h2>Here's some recent posts</h2>
+    {% for post in posts %}
+        <h3>{{ post.title|safe }}</h3>
+        {% if post.adminkey == True %}
+        <h4 class="adminKey">{{ post.username|safe }}, {{ post.date|safe }}</h4>
+        {% else %}
+        <h4>{{ post.username|safe }}, {{ post.date|safe }}</h4>
+        {% endif %}
+        <h4>/{{ post.place }}/ ({{ place_list[post.place] }}) </h4>
+        <p>{{ post.content|safe }}</p>
+        {% if post.filepath != "None" %}
+            <img src="{{ post.filepath }}" alt="img" width="100" />
+        {% endif %}
+        <hr>
+    {% endfor %}
+{% endblock %}

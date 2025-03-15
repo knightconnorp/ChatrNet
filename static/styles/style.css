@@ -1,0 +1,71 @@
+* {
+    font-family: roboto, sans-serif;
+}
+.container {
+    text-align: center;
+}
+.container1{
+    display: inline-block;
+    text-align: left;
+}
+form{
+    display:inline-block;
+    text-align: left;
+}
+body {
+    background-color: bisque;
+}
+a {
+    color: cornflowerblue;
+    text-decoration: none;
+}
+.place {
+    color: slateblue;
+    text-decoration: none;
+}
+textarea {
+    resize: none;
+    width: 200px;
+    height: 200px;
+}
+h1, h2 {
+    color: black;
+    text-align: center;
+}
+h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+h4{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: steelblue;
+}
+p{
+    font-size: 14px;
+}
+hr {
+    width: 25%;
+    margin-left:0;
+}
+.lineTop{
+    width: 100%;
+}
+.lineMiddle{
+    margin-left: auto;
+}
+.adminKey{
+    color:indianred;
+}
+.navTop{
+    background: navajowhite;
+    padding: 10px;
+    border: solid black 2px;
+
+}
+.siteName{
+    font-size: 16px;
+    padding-top: 0;
+    margin-top: 0;
+}

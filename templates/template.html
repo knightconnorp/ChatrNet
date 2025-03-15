@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <meta charset="UTF-8">
+    <title>ChatrNet - {{ title|safe }}</title>
+</head>
+<body>
+    <nav class="navTop">
+        <p class="siteName">ChatrNet</p> |
+        <a href="/">Home</a> |
+        <a href="/post">Post</a> |
+        <a href="/about">About</a> |
+    </nav>
+
+    {% block page_content %}
+    {% endblock %}
+</body>
+</html>

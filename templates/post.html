@@ -1,0 +1,25 @@
+{% extends "template.html" %}
+{% block page_content %}
+	<h1>{{ title|safe }}</h1>
+    <div class="container">
+        <form action="/post" method="POST" enctype="multipart/form-data" autocomplete="off">
+            <label for="place">Place:</label><br>
+            <select name="place" id="place" required>
+                {% for place in place_list %}
+                    <option value={{ place }}>/{{ place }}/ ({{ place_list[place] }})</option>
+                {% endfor %}
+            </select><br><br>
+            <label for="title">Title: </label><br>
+            <input type="text" name="title" id="title" placeholder="Title" maxlength="24" required/><br><br>
+            <label for="username">Username: </label><br>
+            <input type="text" name="username" id="username" placeholder="Anonymous" maxlength="24"/><br><br>
+            <label for="adminkey">Admin Key: </label><br>
+            <input type="text" name="adminkey" id="adminkey" placeholder="Admin Key" maxlength="16"/><br><br>
+            <label for="content">Content: </label><br>
+            <textarea name="content" id="content" placeholder="Content" maxlength="256" required></textarea><br><br>
+            <label for="file">Image: </label><br>
+            <input type="file" name="file" id="file" placeholder="Image" accept="image/gif, image/jpeg, image/png" maxlength="256"/><br><br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
+{% endblock %}

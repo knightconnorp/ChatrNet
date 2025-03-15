@@ -1,0 +1,20 @@
+{% extends "template.html" %}
+{% block page_content %}
+    <div class="container">
+        <div class="container1">
+            <h1>{{ title|safe }}</h1>
+            <p style="font-size: 20px;">
+                Hi there. This is a simple, social networking site I developed to test<br>
+                both the abilities of the Python Flask framework, and my abilities.<br><br>
+
+                During the creation of this site I used Flask Framework, SQLite through<br>
+                SQLAlchemy, with basic Jinja2 and CSS.
+            </p>
+        </div>
+    </div>
+    <footer>
+    <nav class="navTop">
+        <a href="/terms">Terms of Use</a>
+    </nav>
+    </footer>
+{% endblock %}
