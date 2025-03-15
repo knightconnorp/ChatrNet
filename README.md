@@ -5,5 +5,5 @@
 - When an image is uploaded, it is stored in ```static/uploads```. Only allows png, jpg, and gif's.
 - Homepage, with 4 most recent posts
 - By default, ChatrNet has 4 'places'. When a user posts, they choose what place they want to post
-- A 'place' can easily be added by including a new dictionary item in 'place_list' at top of ```app.py``` file. Dictionary key is what shows in the URL, the dictionary item is the name of the place
+- A 'place' can easily be added by including a new dictionary item in 'place_list' at top of ```app.py``` file. Dictionary key is what shows in the URL, the dictionary item is the name of the place (Ex: ```'m':'Memes'```. The url for this page would be ```yoururl.com/m```, and the name of the place shown is ```Memes```)
 ![ChatrNet](chatrnet.png)
